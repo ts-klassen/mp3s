@@ -38,6 +38,7 @@ for ($i=0;$i<10;$i++) {
 
 unset($mp3s);
 ```
+The example adds 10 MP3 audio files to the stream, one at a time, using a loop. The loop sleeps for one second between each file to simulate a delay for creating the audio files.
 
 ## License
 MP3S is released under the TTS QUEST PUBLIC LICENSE.
