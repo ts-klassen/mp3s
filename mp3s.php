@@ -14,9 +14,7 @@ class Mp3S {
   }
   public function addAudioFile($path) {
     $audio = file_get_contents($path);
-    if ($this->audioCnt++>-1) {
-      $audio = $this->skipId3($audio);
-    }
+    $audio = $this->skipId3($audio);
     echo sprintf("%x\r\n", strlen($audio));
     echo $audio . "\r\n";
     flush();
